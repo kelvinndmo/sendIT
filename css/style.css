@@ -9,6 +9,7 @@
 }
 .dashboard__content {
     padding: 15px;
+    font-size: 15px;
 }
 .order-history {
     text-align: center;
@@ -22,7 +23,7 @@
     box-shadow: 1px 1px 1px rgb(134, 134, 134);
 }
 
-.desc_header {
+.velda_header {
     padding-bottom: 0.4rem;
     font-weight: 700;
     color: black;
@@ -36,6 +37,10 @@
     justify-content: flex-start;
     box-shadow: .8px .8px .8px .8px rgb(158, 158, 158);
     color: black;
+    animation-name: moveinright;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    /* margin-bottom: 1px; */
 }
 
 .btn:hover {
@@ -200,6 +205,22 @@ body{
     animation-duration: 1s;
     animation-timing-function: ease-out;
 }
+.sendit-mainn{
+    display: block;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    /* background-color: rgb(7, 203, 218); */
+    /* letter-spacing: 45px; */
+    animation-name: moveinleft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+.kevooh{
+    background-color: #181602;
+}
 .sendit-sub{
     display: block;
     font-size: 25px;
@@ -211,6 +232,7 @@ body{
     /* margin-bottom: 1px; */
 
 }
+
 .sendit-sub-sub{
     display: block;
     font-size: 25px;
@@ -463,12 +485,12 @@ body{
     display: inline-block;
   }
   
-  .desc {
+  .velda {
     text-align: center;
     line-height: 1.5rem;
   }
   
-  .desc p {
+  .velda p {
     font-size: 20px;
     font-weight: 300;
   }
