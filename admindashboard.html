@@ -6,110 +6,120 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Fast-Food-Fast</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" media="screen" href="../assets/css/dashboard.css">
     <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/history.css">
     <link href=" https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900 " rel="stylesheet ">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" media="screen" href="../assets/css/shared.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="main-nav left">
-                <li>
-                    <a href="../index.html ">Home</a>
-                </li>
-            </div>
-            <div class="main-nav">
-                <ul>
-                    <li>
-                        <a href="users.html">food menu</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <section class="user">
-        <div class="history__container ">
-            <div class="order-history">
-                <p>My order history</p>
-            </div>
-            <div class="rows">
-                <div class="history__item desc_header">Meal orders</div>
-                <div class="history__item desc_header">food</div>
-                <div class="history__item desc_header ">Date</div>
-                <div class="history__item desc_header ">price</div>
-            </div>
-            <div class="rows">
-                <div class="history__item">1</div>
-                <div class="history__item">chips/kuku</div>
-                <div class="history__item">31-08-2018</div>
-                <div class="history__item">450 ksh</div>
-            </div>
-            <div class="rows">
-                <div class="history__item">2</div>
-                <div class="history__item">chips masala</div>
-                <div class="history__item">29-08-2018</div>
-                <div class="history__item">220 ksh</div>
+    <div class="dashboard">
 
-            </div>
-            <div class="rows">
-                <div class="history__item">3</div>
-                <div class="history__item">burger</div>
-                <div class="history__item">21-08-2018</div>
-                <div class="history__item">150 ksh</div>
+            <section class="dashboard__content">
+                <div class="history__container ">
+                    <div class="order-history">
+                        <p>Customers orders
 
-            </div>
-            <div class="rows">
-                <div class="history__item">4</div>
-                <div class="history__item">hot dog</div>
-                <div class="history__item">30-07-2018</div>
-                <div class="history__item">350 ksh</div>
-
-            </div>
-            <div class="rows ">
-                <div class="history__item">5</div>
-                <div class="history__item">pizza</div>
-                <div class="history__item">1-06-2018</div>
-                <div class="history__item">1150 ksh</div>
-
-            </div>
-            <div class="rows ">
-                <div class="history__item">6</div>
-                <div class="history__item">kebab</div>
-                <div class="history__item">27-05-2018</div>
-                <div class="history__item">150 ksh</div>
-
-            </div>
-        </div>
-    </section>
-
-    <footer id="contacts">
-        <div class="row-two">
-            <div class="col span-1-of-2">
-                <ul class="footer-nav">
-                    <li>
-                        <a href="#">About us</a>
-
-                    </li>
-                    <li>
-                        <a href="#">Our locations</a>
-                    </li>
-                    <li>
-                        <div>
-                            <a href="#">Terms of service</a>
+                        </p>
+                    </div><br>
+                    <div class="rows">
+                        <div class="history__item desc_header">Customer Name</div>
+                        <div class="history__item desc_header">Destination</div>
+                        <div class="history__item desc_header ">From</div>
+                        <div class="history__item desc_header ">weight(KGS)</div>
+                        <div class="history__item desc_header ">Price</div>
+                        <div class="history__item desc_header ">Accept/reject</div>
+                    </div>
+                    <div class="rows">
+                        <div class="history__item">1. Kelvin Ndemo</div>
+                        <div class="history__item">Kisumu</div>
+                        <div class="history__item">Nairobi</div>
+                        <div class="history__item">10</div>
+                        <div class="history__item">ksh.50</div>
+                        <div class="history__item">
+                            <div class="accept_order">
+                                <i class="fa fa-check-circle btn-accept"></i>
+                                <i class="fa fa-times-circle btn-reject"></i>
+                            </div>
                         </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="col span-1-of-2">
-                <ul class="social-icons">
+                    </div>
+                    <div class="rows">
+                        <div class="history__item">2. James Masher</div>
+                        <div class="history__item">Kisii</div>
+                        <div class="history__item">Migori</div>
+                        <div class="history__item">20</div>
+                        <div class="history__item">ksh.250</div>
+                        <div class="history__item">
+                            <div class="accept_order">
+                                <i class="fa fa-check-circle btn-accept"></i>
+                                <i class="fa fa-times-circle btn-reject"></i>
+                            </div>
+                        </div>
 
-            </div>
-        </div>
-        <div class="row-two">
-            <p>Copyright &copy;2018 by Kimame. All rights reserved.</p>
-        </div>
-    </footer>
+                    </div>
+                    <div class="rows">
+                        <div class="history__item">3. Vero Ndemo</div>
+                        <div class="history__item">Mombasa</div>
+                        <div class="history__item">Kiambu</div>
+                        <div class="history__item">20</div>
+                        <div class="history__item">ksh.2500</div>
+                        <div class="history__item">
+                            <div class="accept_order">
+                                <i class="fa fa-check-circle btn-accept"></i>
+                                <i class="fa fa-times-circle btn-reject"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="rows">
+                        <div class="history__item">4. James Masher</div>
+                        <div class="history__item">Kerugoya</div>
+                        <div class="history__item">Migori</div>
+                        <div class="history__item">25</div>
+                        <div class="history__item">ksh.1500</div>
+                        <div class="history__item">
+                            <div class="accept_order">
+                                <i class="fa fa-check-circle btn-accept"></i>
+                                <i class="fa fa-times-circle btn-reject"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="rows ">
+                        <div class="history__item">5. Damaris Auma</div>
+                        <div class="history__item">Thika</div>
+                        <div class="history__item">Kisumu</div>
+                        <div class="history__item">23</div>
+                        <div class="history__item">ksh.1050</div>
+                        <div class="history__item">
+                            <div class="accept_order">
+                                <i class="fa fa-check-circle btn-accept"></i>
+                                <i class="fa fa-times-circle btn-reject"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="rows ">
+                        <div class="history__item">6. Jacque Maribe</div>
+                        <div class="history__item">Mombasa</div>
+                        <div class="history__item">Karen</div>
+                        <div class="history__item">35</div>
+                        <div class="history__item">ksh.1950</div>
+                        <div class="history__item">
+                            <div class="accept_order">
+                                <i class="fa fa-check-circle btn-accept"></i>
+                                <i class="fa fa-times-circle btn-reject"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 
 </html>
