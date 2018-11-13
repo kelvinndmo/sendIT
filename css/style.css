@@ -11,6 +11,11 @@
     padding: 15px;
     font-size: 15px;
 }
+.nooo{
+    font-size: 20px;
+    color: rgb(110, 15, 15);
+
+}
 .order-history {
     text-align: center;
     background-image: linear-gradient(to right bottom, rgb(126, 15, 230), rgb(27, 205, 211));
