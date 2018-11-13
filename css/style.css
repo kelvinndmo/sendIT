@@ -678,10 +678,27 @@ body{
     border: 1px solid;
     width: 50%;
 }
+
+    .kel{
+        text-transform: uppercase;
+        outline: 0;
+        margin-left: 1px;
+        margin-top: 60px;
+        background-color: rgb(25, 189, 33);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 10px;
+        float:right;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+        border: 1px solid;
+        width: 40%;
+}
 .kevohhh{
     text-transform: uppercase;
     outline: 0;
     margin-left: 60px;
+    float: left;
     margin-top: 60px;
     background-color:rgb(245, 11, 23);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -693,19 +710,20 @@ body{
     width: 50%;
 }
 .kevohhhh{
-    text-transform: uppercase;
-    outline: 0;
-    margin-left: 60px;
-    margin-top: 60px;
-    background-color:rgb(235, 97, 17);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 10px;
-    border-radius: 10px;
-    color: white;
-    cursor: pointer;
-    border: 1px solid;
-    width: 50%;
-}
+        text-transform: uppercase;
+        outline: 0;
+        margin-left: 1px;
+        margin-top: 60px;
+        background-color: rgb(165, 151, 160);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 10px;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+        border: 1px solid;
+        width: 40%;
+    }
+
 .transit{
     text-transform: uppercase;
     outline: 0;
