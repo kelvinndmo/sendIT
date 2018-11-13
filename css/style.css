@@ -37,6 +37,7 @@
     justify-content: flex-start;
     box-shadow: .8px .8px .8px .8px rgb(158, 158, 158);
     color: black;
+    font-size: 20px;
     animation-name: moveinright;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -56,7 +57,9 @@
 }
 
 .btn-accept {
-    color: rgb(8, 233, 8);
+    color: rgb(8, 8, 8);
+    font-size: 35px;
+    float:center;
 }
 /*
 COLORS:
@@ -772,6 +775,7 @@ body{
 
 .btn-reject {
     color: rgb(241, 42, 7);
+    font-size: 35px;
 }
 
 .btn-orange {
@@ -793,6 +797,7 @@ body{
     height: 100%;
     width: 100%;
     margin-top: 20px;
+    font-size: 10px;
 }
 .navigation {
     background: linear-gradient(rgb(43, 161, 165), rgb(56, 169, 173));
