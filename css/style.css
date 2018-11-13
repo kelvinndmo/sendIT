@@ -172,8 +172,11 @@ body{
 
 
 }
+.jas{
+    margin-bottom: 5px;
+}
 .header{
-    height: 95vh;
+    height: 68vh;
     background-image: 
     linear-gradient(hsla(355, 88%, 50%, 0.87),
     rgba(10, 226, 150, 0.959)),
@@ -344,7 +347,7 @@ body{
     list-style: none;
     line-height: 1;
     display: block;
-    color: darkorange;
+    color: rgb(252, 247, 251);
     position: relative;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -355,6 +358,7 @@ body{
     content: ".";
     display: block;
     clear: both;
+    color: #181602;
     visibility: hidden;
     line-height: 0;
     height: 0;
@@ -371,6 +375,7 @@ body{
      position: fixed;
      z-index: 500;
      margin: 0px;
+     text-transform: uppercase;
      overflow: hidden;  
 }
 
@@ -412,7 +417,7 @@ body{
 }
 
 #cssmenu>ul>li.active>a, #cssmenu>ul>li:hover>a, #cssmenu>ul>li>a:hover {
-    color: #ffffff;
+    color: #0f0f0f;
 }
 
 #cssmenu>ul>li>a:after {
@@ -469,8 +474,9 @@ body{
     margin-right: 3rem;
     border-bottom: 0.1rem solid wheat;
     width: 33.3%;
+   
     height: 18rem;
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 1rem 0 rgba(236, 13, 13, 0.2);
   }
   
   .col-4:hover {
@@ -494,83 +500,7 @@ body{
     font-size: 20px;
     font-weight: 300;
   }
-  /*footer*/
-  #contacts {
-    height: 20vh;
-    width: 100%;
-    background: rgb(43, 161, 165);
-  }
   
-  .footer-nav li {
-    margin-top: 40px;
-    display: inline-block;
-    list-style: none;
-    
-  }
-  
-  .footer-nav li a {
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  .footer-nav li a:hover {
-    color: orange;
-  }
-  
-  .social-icons {
-    margin-top: 40px;
-    list-style: none;
-  }
-  
-  footer p {
-    color: #fff;
-    font-size: 60%;
-  }
-  
-  .card {
-    padding: 10px 20px;
-    height: 300px;
-  }
-  
-  #contacts {
-    height: 20vh;
-    width: 100%;
-    background: rgb(43, 161, 165);
-  }
-  .novak{
-      color: white;
-  }
-  
-  .footer-nav li {
-    margin-top: 40px;
-    display: inline-block;
-    list-style: none;
-    padding: 10px;
-  }
-  
-  .footer-nav li a {
-    text-decoration: none;
-    color: #fff;
-  }
-  
-  .footer-nav li a:hover {
-    color: orange;
-  }
-  
-  .social-icons {
-    margin-top: 40px;
-    list-style: none;
-  }
-  
-  footer p {
-    color: #fff;
-    font-size: 60%;
-  }
-  
-  .card {
-    padding: 10px 20px;
-    height: 300px;
-  }
   .section-book{
       padding: 15rem 0;
       background-image: 
@@ -656,9 +586,64 @@ body{
     /* text-align: left; */
 
   }
+  footer{
+      background-color:#333;
+      margin: 0%;
+      padding: px;
+      text-decoration: none;
+    
+
+
+  }
+  .footer-nav{
+      list-style: none;
+      color: white;
+      display: inline-block;
+      float: left;
+      color: white;
+  }
+  .k{
+    list-style: none;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #333;
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+  }
+  .fa fa-facebook-official:hover{
+      color: #3b5998;
+  }
+  .social{
+      float: right;
+      list-style: none;
+      color: white;
+  }
+  .footer-nav li,
+  .social li{
+      display: inline-block;
+      margin-right:10px;
+
+  }
+  .footer-nav li a:link,
+  .footer-nav li a:visited,
+  .social li a:link,
+  .social li a:visited{
+      text-decoration: none;
+      color: #888;
+      transition: color 0.2s;
+  }
+  .footer-nav li a:hover,
+  .footer-nav li a:active,
+  .social li a:link,
+  .social li a:visited{
+      text-decoration: none;
+      color: #ddd;
+  }
   
   .col-4:hover {
     transform: translateY(-1.5rem) scale(1.03);
+   
   }
   
   .steps {
@@ -676,6 +661,7 @@ body{
   
   .vero p {
     font-size: 19px;
+    color: #0f0f0f;
     font-weight: 300;
   }
   .kevohh{
@@ -751,6 +737,12 @@ body{
 }
 .mee{
     width: 100%;
+}
+.message{
+    color: wheat;
+}
+.message a{
+    color: rgb(226, 213, 26);
 }
 .ndemoh{
     height: 95vh;
