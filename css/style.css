@@ -191,7 +191,7 @@ body{
     url(../images/novak5.png);
     background-size: cover;
     background-position: top;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 .logo{
     position: absolute;
