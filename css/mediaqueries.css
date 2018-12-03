@@ -1,0 +1,26 @@
+/*small phones to smaill tablets: from 481-767px*/
+@media only screen and (max-width:767px){
+
+}
+/*small tablets  to big tablets from 768-1023px*/
+@media only screen and (max-width:1023px){
+.Registration{
+    width: 100%;
+}
+}
+/* small phone from 0 to 480px */
+@media only screen and (max-width:480px){
+
+}
+
+/*for widths small than 1140px*/
+@media only screen and (max-width:1200px){
+    .header{
+        height: 95vh;
+        width: 100%;
+        padding: 0 2%;
+    }
+    .cssmenu{
+        padding:0 2%;
+    }
+    }
