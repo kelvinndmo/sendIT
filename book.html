@@ -17,8 +17,8 @@
     <div id='cssmenu'>
         <ul>
             <li class='active'><a href='book.html'>SEND PARCEL</a></li>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href='user.html'>LOGIN|SIGNUP</a></li>
+            <li><a href="userdashboard.html">your dashboard</a></li>
+            <li><a href='user.html'>LOGOUT</a></li>
 
 
         </ul>
@@ -27,38 +27,29 @@
             <div class="Registration">
                     <div class="form">
                        
-                        <form class="Login">
+                        <form id='form_parcel' class="Login">
                             <div class="nooo">
                             SEND PARCEL
-                            <input type="text" placeholder="OFFICIAL NAMES" required="required">
-                            <input type="password" placeholder="EMAIL ADRESS" required="required"><br>
-                            <input type="email" placeholder="PHONE NUMBER" required="required">
-                          <p class="nooo">  ORIGIN </p>
-                            <select>
-                                <option value="Kakamega,Kenya">KaKemega,Nairobi</option>
-                                <option value="Kakamega,Kenya">KaKemega,Nairobi</option>
-                                <option value="Kakamega,Kenya">KaKemega,Nairobi</option>
-                                <option value="Kakamega,Kenya">KaKemega,Nairobi</option>
-                                <option value="Kakamega,Kenya">KaKemega,Nairobi</option>
+                            <!-- <input id="sender" type="text" placeholder="OFFICIAL NAMES" required="required"> -->
+
+                          <p  class="nooo">  ORIGIN </p>
+                            <select id="origin">
+                                <option value="Kakamega">KaKemega,Nairobi</option>
                             </select>
-                            <p class="nooo">  DESTINATION </p>
-                            <select>
-                                <option value="Kakamega,Kenya">KaKemega,Nairobi</option>
-                                <option value="Kakamega,Kenya">KaKemega,Nairobi</option>
-                                <option value="Kakamega,Kenya">KaKemega,Nairobi</option>
-                                <option value="Kakamega,Kenya">KaKemega,Nairobi</option>
-                                <option value="Kakamega,Kenya">KaKemega,Nairobi</option>
+                            <p  class="nooo">  DESTINATION </p>
+                            <select id="destination">
+                                <option value="Kakamega">KaKemega</option>
                             </select><br>
                         </div>
-                           <p class="nooo">WEIGHT</p>  :<input type="number" min="0" max="50"><br>
-                            <a href="user.html" class="btn white-butn btn-animated">Send Parcel</a>
+                           <p  class="nooo">WEIGHT</p>  :<input id='weight' type="number" min="0" max="50"><br>
+                            <a id='send_parcel' href="userdashboard.html" class="btn white-butn btn-animated">Send Parcel</a>
                            
             
                         </form>
                     </div>
                 </div>
 
-    </section>
+    </section><br><br>
     <footer>
         <div class="wor">
             <div class="one">
@@ -86,6 +77,7 @@
         </div>
 
     </footer>
+    <script src="/js/order/order.js"></script>
 </body>
 
 </html>
