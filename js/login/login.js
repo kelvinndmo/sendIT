@@ -28,7 +28,7 @@ log_submit.addEventListener("click", e => {
       localStorage.setItem("token", token);
       localStorage.setItem("user_id", id);
       if (localStorage.token) {
-        window.location = window.location.origin + "/book.html";
+        window.location = window.location.origin + "/sendIT/book.html";
       }
       console.log(data);
     })
