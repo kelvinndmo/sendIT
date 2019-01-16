@@ -1,4 +1,4 @@
-function getUrlVars = () => {
+function getUrlVars() {
   let vars = {};
   let parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(
     m,
@@ -8,10 +8,12 @@ function getUrlVars = () => {
     vars[key] = value;
   });
   return vars;
-};
+}
 
-const number = this.getUrlVars()["id"];
+const number = getUrlVars()["id"];
 const { origin, weight, destination } = document.forms.order_edit.elements;
+const alert = document.getElementById("alert");
+
 if (number > 0) {
   fetch(`https://seend34.herokuapp.com/api/v2/parcels/${number}`, {
     headers: {
@@ -55,6 +57,13 @@ if (number > 0) {
       })
       .then(data => {
         console.log(data);
+
+        alert.className = "alert alert-success alert-dismissible fade show";
+        alert.innerText = data.message;
+
+        setTimeout(() => {
+          alert.className = "alert alert-success alert-dismissible fade";
+        }, 3000);
       })
       .catch(error => {
         console.log(error);
@@ -76,7 +85,12 @@ if (number > 0) {
         return resp.json();
       })
       .then(data => {
-        console.log(data);
+        alert.className = "alert alert-success alert-dismissible fade show";
+        alert.innerText = data.message;
+
+        setTimeout(() => {
+          alert.className = "alert alert-success alert-dismissible fade";
+        }, 3000);
       })
       .catch(error => {
         console.log(error);
@@ -98,7 +112,12 @@ if (number > 0) {
         return resp.json();
       })
       .then(data => {
-        console.log(data);
+        alert.className = "alert alert-success alert-dismissible fade show";
+        alert.innerText = data.message;
+
+        setTimeout(() => {
+          alert.className = "alert alert-success alert-dismissible fade";
+        }, 3000);
       })
       .catch(error => {
         console.log(error);

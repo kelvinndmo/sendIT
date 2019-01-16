@@ -629,6 +629,7 @@ body {
     url(../images/novak5.png);
   background-size: cover;
   background-position: top;
+  padding-top: 10rem;
 }
 .form_input {
   font-size: 20px;
@@ -869,7 +870,6 @@ footer {
   height: 95vh;
   background-size: cover;
   background-position: top;
-
 }
 
 .btn-reject {
@@ -923,4 +923,42 @@ footer {
   position: relative;
   top: 30%;
   padding: 1rem;
+}
+
+.alert {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.alert-dismissible {
+  padding-right: 4rem;
+}
+
+.fade {
+  display: none;
+  transition: opacity 0.15s linear;
+}
+
+.fade.show {
+  display: block;
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+.alert-warning {
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
 }

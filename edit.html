@@ -15,22 +15,16 @@
       media="screen"
       href="css/style.css"
     />
-    <script src="main.js"></script>
   </head>
 
   <body class="ndemoh">
-    <div id="cssmenu">
-      <ul>
-        <li class="active"><a href="edit.html">edit parcel</a></li>
-        <li><a href="book.html">Send Parcel</a></li>
-        <li><a href="user.html">Logout</a></li>
-      </ul>
-    </div>
+    <div id="cssmenu"><ul id="navigationlinks"></ul></div>
     <br /><br /><br />
     <div class="history__container ">
       <div class="kevooh">
         <div class="sendit-mainn"><p>EDIT YOUR ORDERS</p></div>
       </div>
+      <div id="alert" role="alert"></div>
       <div class="rows">
         <div class="history__item velda_header">recepient's Name</div>
 
@@ -101,6 +95,7 @@
       </div>
     </footer>
 
+    <script src="js/index.js"></script>
     <script src="js/order/editorder.js"></script>
   </body>
 </html>

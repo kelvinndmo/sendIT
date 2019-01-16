@@ -1,83 +1,105 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Send Parcel</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/mediaqueries.css" />
-    <script src="main.js"></script>
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/mediaqueries.css"
+    />
+  </head>
 
-<body>
-    <div id='cssmenu'>
-        <ul>
-            <li class='active'><a href='book.html'>SEND PARCEL</a></li>
-            <li><a href="userdashboard.html">your dashboard</a></li>
-            <li><a href='user.html'>LOGOUT</a></li>
-
-
-        </ul>
-    </div><br>
+  <body>
+    <div id="cssmenu"><ul id="navigationlinks"></ul></div>
+    <br />
     <section class="hydah">
-            <div class="Registration">
-                    <div class="form">
-                       
-                        <form id='form_parcel' class="Login">
-                            <div class="nooo">
-                            SEND PARCEL
-                            <!-- <input id="sender" type="text" placeholder="OFFICIAL NAMES" required="required"> -->
+      <div class="Registration">
+        <div class="form">
+          <div id="alert" role="alert"></div>
+          <form id="form_parcel" class="Login">
+            <div class="nooo">
+              SEND PARCEL
+              <!-- <input id="sender" type="text" placeholder="OFFICIAL NAMES" required="required"> -->
 
-                          <p  class="nooo">  ORIGIN </p>
-                            <select id="origin">
-                                <option value="Kakamega">KaKemega,Nairobi</option>
-                            </select>
-                            <p  class="nooo">  DESTINATION </p>
-                            <select id="destination">
-                                <option value="Kakamega">KaKemega</option>
-                            </select><br>
-                        </div>
-                           <p  class="nooo">WEIGHT</p>  :<input id='weight' type="number" min="0" max="50"><br>
-                            <a id='send_parcel' href="userdashboard.html" class="btn white-butn btn-animated">Send Parcel</a>
-                           
-            
-                        </form>
-                    </div>
-                </div>
-
-    </section><br><br>
-    <footer>
-        <div class="wor">
-            <div class="one">
-                <ul class="footer-nav">
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Our locations</a></li>
-                    <li><a href="#">sajfjkfhd</a></li>
-                </ul>
+              <p class="nooo">ORIGIN</p>
+              <select id="origin">
+                <option value="Kakamega">KaKemega,Nairobi</option>
+                <option value="Nairobi">Nairobi,Kenya</option>
+              </select>
+              <p class="nooo">DESTINATION</p>
+              <select id="destination">
+                <option value="Kakamega">KaKemega</option>
+                <option value="Nairobi">Nairobi,Kenya</option> </select
+              ><br />
             </div>
-            <div class="wor">
-                <ul class="social">
-                    <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></li>
-                </ul>
-            </div><br>
-
+            <p class="nooo">WEIGHT</p>
+            <input id="weight" type="number" min="0" max="50" /><br />
+            <a
+              id="send_parcel"
+              href="userdashboard.html"
+              class="btn white-butn btn-animated"
+              >Send Parcel</a
+            >
+          </form>
+        </div>
+      </div>
+    </section>
+    <br /><br />
+    <footer>
+      <div class="wor">
+        <div class="one">
+          <ul class="footer-nav">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Our locations</a></li>
+            <li><a href="#">sajfjkfhd</a></li>
+          </ul>
         </div>
         <div class="wor">
-            <p class="k">
-                Copyright &copy;2018 by Kelvin Onkundi Ndemo
-            </p>
-
+          <ul class="social">
+            <li>
+              <a href="#"
+                ><i class="fa fa-facebook-official" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa fa-google-plus" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
         </div>
-
+        <br />
+      </div>
+      <div class="wor">
+        <p class="k">Copyright &copy;2018 by Kelvin Onkundi Ndemo</p>
+      </div>
     </footer>
-    <script src="js/order/order.js"></script>
-</body>
 
+    <script src="js/index.js"></script>
+    <script src="js/order/order.js"></script>
+  </body>
 </html>

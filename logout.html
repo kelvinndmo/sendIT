@@ -1,0 +1,30 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SendIt - Logging Out</title>
+  </head>
+  <body>
+    <h3>Loging out. Please wait.</h3>
+
+    <script>
+      const logout = async () => {
+        if (localStorage.token && localStorage.user_id) {
+          // Remove token from localStorage
+          await localStorage.removeItem("token");
+          await localStorage.removeItem("user_id");
+        }
+
+        // Redirect to login
+
+        window.setTimeout(() => {
+          window.location = window.location.origin + "/sendIT/user.html";
+        }, 1000);
+      };
+
+      logout();
+    </script>
+  </body>
+</html>
+;
