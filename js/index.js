@@ -52,7 +52,11 @@ if (localStorage.token && localStorage.user_id) {
   navlinks({ href: "userdashboard.html", text: "DASHBOARD" });
   navlinks({ href: "book.html", text: "Place order" });
   if (decoded.identity === "AdminUser") {
-    navlinks({ href: "", classname: "", text: "Admin Dashboard" });
+    navlinks({
+      href: "admindashboard.html",
+      classname: "",
+      text: "Admin Dashboard"
+    });
   }
   navlinks({
     href: "logout.html",
@@ -60,6 +64,13 @@ if (localStorage.token && localStorage.user_id) {
     icon: "fa-user-circle",
     text: "LOGOUT"
   });
+
+  if (
+    window.location.pathname === "/sendIT/admindashboard.html" &&
+    decoded.identity !== "AdminUser"
+  ) {
+    window.location = window.location.origin + "/sendIT/userdashboard.html";
+  }
 } else {
   //    create url links
   navlinks({ href: "index.html", text: "Home" });

@@ -1,542 +1,912 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Admin Dashboard</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href=" https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900 " rel="stylesheet ">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/mediaqueries.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href=" https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900 "
+      rel="stylesheet "
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/mediaqueries.css"
+    />
+  </head>
 
-
-</head>
-
-<body>
-    <div id='cssmenu'>
-        <ul>
-
-            <li class='active'><a href='adminlogin.html'>ADMIN DASHBOARD</a></li>
-            <li><a href='index.html'>HOME</a></li>
-            <li><a href='user.html'><i class="fa fa-user-circle" aria-hidden="true"></i>USER LOGIN</a></li>
-            <li><a href='user.html'><i class="fa fa-user-circle" aria-hidden="true"></i>LOGOUT</a></li>
-
-
-
-
-        </ul>
-    </div><br>
+  <body>
+    <div id="cssmenu"><ul id="navigationlinks"></ul></div>
+    <br />
     <div class="dashboard">
+      <section class="dashboard__content">
+        <div class="history__container ">
+          <div class="kevooh">
+            <div class="sendit-mainn"><p>Placed Parcel orders</p></div>
+          </div>
+          <br />
 
+          <div class="rows">
+            <div class="history__item velda_header">Customer Name</div>
+            <div class="history__item velda_header">Destination</div>
+            <div class="history__item velda_header ">From</div>
+            <div class="history__item velda_header ">weight(KGS)</div>
+            <div class="history__item velda_header ">Present location</div>
+            <div class="history__item velda_header ">status</div>
+          </div>
+        </div>
+        <div class="rows">
+          <div class="history__item">
+            <a href=""></a
+            ><i class="fa fa-user-circle" aria-hidden="true"></i> Kelvin Ndemo
+          </div>
+          <div class="history__item">Kisumu</div>
+          <div class="history__item">Nairobi</div>
+          <div class="history__item">10</div>
+          <div class="history__item">
+            <form>
+              <select>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">Kakamega Nairobi,kenya</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">Keroka,kenya</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">Mombasa</p>
+                </option>
+              </select>
+            </form>
+          </div>
+          <div class="history__item">
+            <form>
+              <select>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">PENDING</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">APPROVED</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">IN TRANSIT</p>
+                </option>
+              </select>
+            </form>
+          </div>
+        </div>
+        <div class="rows">
+          <div class="history__item">
+            <a href=""></a
+            ><i class="fa fa-user-circle" aria-hidden="true"></i> Kelvin Ndemo
+          </div>
+          <div class="history__item">Kisumu</div>
+          <div class="history__item">Nairobi</div>
+          <div class="history__item">10</div>
+          <div class="history__item">
+            <form>
+              <select>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">Kakamega Nairobi,kenya</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">Keroka,kenya</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">Mombasa</p>
+                </option>
+              </select>
+            </form>
+          </div>
+          <div class="history__item">
+            <form>
+              <select>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">PENDING</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">APPROVED</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">IN TRANSIT</p>
+                </option>
+              </select>
+            </form>
+          </div>
+        </div>
+        <div class="rows">
+          <div class="history__item">
+            <a href=""></a
+            ><i class="fa fa-user-circle" aria-hidden="true"></i> Kelvin Ndemo
+          </div>
+          <div class="history__item">Kisumu</div>
+          <div class="history__item">Nairobi</div>
+          <div class="history__item">10</div>
+          <div class="history__item">
+            <form>
+              <select>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">Kakamega Nairobi,kenya</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">Keroka,kenya</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">Mombasa</p>
+                </option>
+              </select>
+            </form>
+          </div>
+          <div class="history__item">
+            <form>
+              <select>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">PENDING</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">APPROVED</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">IN TRANSIT</p>
+                </option>
+              </select>
+            </form>
+          </div>
+        </div>
+        <div class="rows">
+          <div class="history__item">
+            <a href=""></a
+            ><i class="fa fa-user-circle" aria-hidden="true"></i> Kelvin Ndemo
+          </div>
+          <div class="history__item">Kisumu</div>
+          <div class="history__item">Nairobi</div>
+          <div class="history__item">10</div>
+          <div class="history__item">
+            <form>
+              <select>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">Kakamega Nairobi,kenya</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">Keroka,kenya</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">Mombasa</p>
+                </option>
+              </select>
+            </form>
+          </div>
+          <div class="history__item">
+            <form>
+              <select>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">PENDING</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">APPROVED</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">IN TRANSIT</p>
+                </option>
+              </select>
+            </form>
+          </div>
+        </div>
+        <div class="rows">
+          <div class="history__item">
+            <a href=""></a
+            ><i class="fa fa-user-circle" aria-hidden="true"></i> Kelvin Ndemo
+          </div>
+          <div class="history__item">Kisumu</div>
+          <div class="history__item">Nairobi</div>
+          <div class="history__item">10</div>
+          <div class="history__item">
+            <form>
+              <select>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">Kakamega Nairobi,kenya</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">Keroka,kenya</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">Mombasa</p>
+                </option>
+              </select>
+            </form>
+          </div>
+          <div class="history__item">
+            <form>
+              <select>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">PENDING</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">APPROVED</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">IN TRANSIT</p>
+                </option>
+              </select>
+            </form>
+          </div>
+        </div>
+        <div class="rows">
+          <div class="history__item">
+            <a href=""></a
+            ><i class="fa fa-user-circle" aria-hidden="true"></i> Kelvin Ndemo
+          </div>
+          <div class="history__item">Kisumu</div>
+          <div class="history__item">Nairobi</div>
+          <div class="history__item">10</div>
+          <div class="history__item">
+            <form>
+              <select>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">Kakamega Nairobi,kenya</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">Keroka,kenya</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">Mombasa</p>
+                </option>
+              </select>
+            </form>
+          </div>
+          <div class="history__item">
+            <form>
+              <select>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">PENDING</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">APPROVED</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">IN TRANSIT</p>
+                </option>
+              </select>
+            </form>
+          </div>
+        </div>
 
-        <section class="dashboard__content">
-            <div class="history__container ">
-                <div class="kevooh">
-                    <div class="sendit-mainn">
-                        <p>Placed Parcel orders
+        <div class="rows">
+          <div class="history__item">
+            <i class="fa fa-user-circle" aria-hidden="true"></i> James Masher
+          </div>
+          <div class="history__item">Kisii</div>
+          <div class="history__item">Migori</div>
+          <div class="history__item">20</div>
+          <div class="history__item">
+            <form>
+              <select>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">Kakamega Nairobi,kenya</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">Keroka,kenya</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">Mombasa</p>
+                </option>
+              </select>
+            </form>
+          </div>
+          <div class="history__item">
+            <form>
+              <select>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">PENDING</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">APPROVED</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">IN TRANSIT</p>
+                </option>
+              </select>
+            </form>
+          </div>
+        </div>
+        <div class="rows">
+          <div class="history__item">
+            <i class="fa fa-user-circle" aria-hidden="true"></i> Vero Ndemo
+          </div>
+          <div class="history__item">Mombasa</div>
+          <div class="history__item">Kiambu</div>
+          <div class="history__item">20</div>
+          <div class="history__item">
+            <form>
+              <select>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">Kakamega Nairobi,kenya</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">Keroka,kenya</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">Mombasa</p>
+                </option>
+              </select>
+            </form>
+          </div>
+          <div class="history__item">
+            <form>
+              <select>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">PENDING</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">APPROVED</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">IN TRANSIT</p>
+                </option>
+              </select>
+            </form>
+          </div>
+        </div>
+        <div class="rows">
+          <div class="history__item">
+            <i class="fa fa-user-circle" aria-hidden="true"></i> James Masher
+          </div>
+          <div class="history__item">Kerugoya</div>
+          <div class="history__item">Migori</div>
+          <div class="history__item">25</div>
+          <div class="history__item">
+            <form>
+              <select>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">Kakamega Nairobi,kenya</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">Keroka,kenya</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">Mombasa</p>
+                </option>
+              </select>
+            </form>
+          </div>
 
-                        </p>
-                    </div>
-                </div><br>
-
-                <div class="rows">
-                    <div class="history__item velda_header">Customer Name</div>
-                    <div class="history__item velda_header">Destination</div>
-                    <div class="history__item velda_header ">From</div>
-                    <div class="history__item velda_header ">weight(KGS)</div>
-                    <div class="history__item velda_header ">Present location</div>
-                    <div class="history__item velda_header ">status</div>
-                </div>
-            </div>
-            <div class="rows">
-                <div class="history__item"><a href=""></a><i class="fa fa-user-circle" aria-hidden="true"></i> Kelvin
-                    Ndemo</div>
-                <div class="history__item">Kisumu</div>
-                <div class="history__item">Nairobi</div>
-                <div class="history__item">10</div>
-                <div class="history__item">
-                    <form>
-
-                        <select>
-
-                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                <p class="form_input">Kakamega Nairobi,kenya</p>
-                            </option>
-                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                <p class="form_input">Keroka,kenya</p>
-                            </option>
-                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                <p class="form_input">Mombasa</p>
-                            </option>
-                        </select>
-                    </form>
-                </div>
-                <div class="history__item">
-                    <form>
-
-                        <select>
-
-                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                <p class="form_input">PENDING</p>
-                            </option>
-                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                <p class="form_input">APPROVED</p>
-                            </option>
-                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                <p class="form_input">IN TRANSIT</p>
-                            </option>
-                        </select>
-                    </form>
-                </div>
-            </div>
-            <div class="rows">
-                    <div class="history__item"><a href=""></a><i class="fa fa-user-circle" aria-hidden="true"></i> Kelvin
-                        Ndemo</div>
-                    <div class="history__item">Kisumu</div>
-                    <div class="history__item">Nairobi</div>
-                    <div class="history__item">10</div>
-                    <div class="history__item">
-                        <form>
-    
-                            <select>
-    
-                                <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                    <p class="form_input">Kakamega Nairobi,kenya</p>
-                                </option>
-                                <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                    <p class="form_input">Keroka,kenya</p>
-                                </option>
-                                <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                    <p class="form_input">Mombasa</p>
-                                </option>
-                            </select>
-                        </form>
-                    </div>
-                    <div class="history__item">
-                        <form>
-    
-                            <select>
-    
-                                <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                    <p class="form_input">PENDING</p>
-                                </option>
-                                <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                    <p class="form_input">APPROVED</p>
-                                </option>
-                                <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                    <p class="form_input">IN TRANSIT</p>
-                                </option>
-                            </select>
-                        </form>
-                    </div>
-                </div>
-                <div class="rows">
-                        <div class="history__item"><a href=""></a><i class="fa fa-user-circle" aria-hidden="true"></i> Kelvin
-                            Ndemo</div>
-                        <div class="history__item">Kisumu</div>
-                        <div class="history__item">Nairobi</div>
-                        <div class="history__item">10</div>
-                        <div class="history__item">
-                            <form>
-        
-                                <select>
-        
-                                    <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                        <p class="form_input">Kakamega Nairobi,kenya</p>
-                                    </option>
-                                    <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                        <p class="form_input">Keroka,kenya</p>
-                                    </option>
-                                    <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                        <p class="form_input">Mombasa</p>
-                                    </option>
-                                </select>
-                            </form>
-                        </div>
-                        <div class="history__item">
-                            <form>
-        
-                                <select>
-        
-                                    <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                        <p class="form_input">PENDING</p>
-                                    </option>
-                                    <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                        <p class="form_input">APPROVED</p>
-                                    </option>
-                                    <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                        <p class="form_input">IN TRANSIT</p>
-                                    </option>
-                                </select>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="rows">
-                            <div class="history__item"><a href=""></a><i class="fa fa-user-circle" aria-hidden="true"></i> Kelvin
-                                Ndemo</div>
-                            <div class="history__item">Kisumu</div>
-                            <div class="history__item">Nairobi</div>
-                            <div class="history__item">10</div>
-                            <div class="history__item">
-                                <form>
-            
-                                    <select>
-            
-                                        <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                            <p class="form_input">Kakamega Nairobi,kenya</p>
-                                        </option>
-                                        <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                            <p class="form_input">Keroka,kenya</p>
-                                        </option>
-                                        <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                            <p class="form_input">Mombasa</p>
-                                        </option>
-                                    </select>
-                                </form>
-                            </div>
-                            <div class="history__item">
-                                <form>
-            
-                                    <select>
-            
-                                        <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                            <p class="form_input">PENDING</p>
-                                        </option>
-                                        <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                            <p class="form_input">APPROVED</p>
-                                        </option>
-                                        <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                            <p class="form_input">IN TRANSIT</p>
-                                        </option>
-                                    </select>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="rows">
-                                <div class="history__item"><a href=""></a><i class="fa fa-user-circle" aria-hidden="true"></i> Kelvin
-                                    Ndemo</div>
-                                <div class="history__item">Kisumu</div>
-                                <div class="history__item">Nairobi</div>
-                                <div class="history__item">10</div>
-                                <div class="history__item">
-                                    <form>
-                
-                                        <select>
-                
-                                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                                <p class="form_input">Kakamega Nairobi,kenya</p>
-                                            </option>
-                                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                                <p class="form_input">Keroka,kenya</p>
-                                            </option>
-                                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                                <p class="form_input">Mombasa</p>
-                                            </option>
-                                        </select>
-                                    </form>
-                                </div>
-                                <div class="history__item">
-                                    <form>
-                
-                                        <select>
-                
-                                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                                <p class="form_input">PENDING</p>
-                                            </option>
-                                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                                <p class="form_input">APPROVED</p>
-                                            </option>
-                                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                                <p class="form_input">IN TRANSIT</p>
-                                            </option>
-                                        </select>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="rows">
-                                    <div class="history__item"><a href=""></a><i class="fa fa-user-circle" aria-hidden="true"></i> Kelvin
-                                        Ndemo</div>
-                                    <div class="history__item">Kisumu</div>
-                                    <div class="history__item">Nairobi</div>
-                                    <div class="history__item">10</div>
-                                    <div class="history__item">
-                                        <form>
-                    
-                                            <select>
-                    
-                                                <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                                    <p class="form_input">Kakamega Nairobi,kenya</p>
-                                                </option>
-                                                <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                                    <p class="form_input">Keroka,kenya</p>
-                                                </option>
-                                                <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                                    <p class="form_input">Mombasa</p>
-                                                </option>
-                                            </select>
-                                        </form>
-                                    </div>
-                                    <div class="history__item">
-                                        <form>
-                    
-                                            <select>
-                    
-                                                <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                                    <p class="form_input">PENDING</p>
-                                                </option>
-                                                <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                                    <p class="form_input">APPROVED</p>
-                                                </option>
-                                                <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                                    <p class="form_input">IN TRANSIT</p>
-                                                </option>
-                                            </select>
-                                        </form>
-                                    </div>
-                                </div>
-                                
-                            
-            <div class="rows">
-                <div class="history__item"><i class="fa fa-user-circle" aria-hidden="true"></i> James Masher</div>
-                <div class="history__item">Kisii</div>
-                <div class="history__item">Migori</div>
-                <div class="history__item">20</div>
-                <div class="history__item">
-                    <form>
-
-                        <select>
-
-                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                <p class="form_input">Kakamega Nairobi,kenya</p>
-                            </option>
-                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                <p class="form_input">Keroka,kenya</p>
-                            </option>
-                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                <p class="form_input">Mombasa</p>
-                            </option>
-                        </select>
-                    </form>
-                </div>
-                <div class="history__item">
-                    <form>
-
-                        <select>
-
-                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                <p class="form_input">PENDING</p>
-                            </option>
-                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                <p class="form_input">APPROVED</p>
-                            </option>
-                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                <p class="form_input">IN TRANSIT</p>
-                            </option>
-                        </select>
-                    </form>
-                </div>
-
-            </div>
-            <div class="rows">
-                <div class="history__item"><i class="fa fa-user-circle" aria-hidden="true"></i> Vero Ndemo</div>
-                <div class="history__item">Mombasa</div>
-                <div class="history__item">Kiambu</div>
-                <div class="history__item">20</div>
-                <div class="history__item">
-                    <form>
-
-                        <select>
-
-                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                <p class="form_input">Kakamega Nairobi,kenya</p>
-                            </option>
-                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                <p class="form_input">Keroka,kenya</p>
-                            </option>
-                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                <p class="form_input">Mombasa</p>
-                            </option>
-                        </select>
-                    </form>
-                </div>
-                <div class="history__item">
-                    <form>
-
-                        <select>
-
-                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                <p class="form_input">PENDING</p>
-                            </option>
-                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                <p class="form_input">APPROVED</p>
-                            </option>
-                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                <p class="form_input">IN TRANSIT</p>
-                            </option>
-                        </select>
-                    </form>
-                </div>
-
-            </div>
-            <div class="rows">
-                <div class="history__item"><i class="fa fa-user-circle" aria-hidden="true"></i> James Masher</div>
-                <div class="history__item">Kerugoya</div>
-                <div class="history__item">Migori</div>
-                <div class="history__item">25</div>
-                <div class="history__item">
-                    <form>
-
-                        <select>
-
-                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                <p class="form_input">Kakamega Nairobi,kenya</p>
-                            </option>
-                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                <p class="form_input">Keroka,kenya</p>
-                            </option>
-                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                <p class="form_input">Mombasa</p>
-                            </option>
-                        </select>
-                    </form>
-                </div>
-
-                <div class="history__item">
-                    <form>
-
-                        <select>
-
-                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                <p class="form_input">PENDING</p>
-                            </option>
-                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                <p class="form_input">APPROVED</p>
-                            </option>
-                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                <p class="form_input">IN TRANSIT</p>
-                            </option>
-                        </select>
-                    </form>
-                </div>
-
-            </div>
-            <div class="rows ">
-                <div class="history__item"><i class="fa fa-user-circle" aria-hidden="true"></i> Damaris Auma</div>
-                <div class="history__item">Thika</div>
-                <div class="history__item">Kisumu</div>
-                <div class="history__item">23</div>
-                <div class="history__item">
-                    <form>
-
-                        <select>
-
-                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                <p class="form_input">Kakamega Nairobi,kenya</p>
-                            </option>
-                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                <p class="form_input">Keroka,kenya</p>
-                            </option>
-                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                <p class="form_input">Mombasa</p>
-                            </option>
-                        </select>
-                    </form>
-                </div>
-                <div class="history__item">
-                    <form>
-
-                        <select>
-
-                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                <p class="form_input">PENDING</p>
-                            </option>
-                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                <p class="form_input">APPROVED</p>
-                            </option>
-                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                <p class="form_input">IN TRANSIT</p>
-                            </option>
-                        </select>
-                    </form>
-                </div>
-
-            </div>
-            <div class="rows ">
-                <div class="history__item"><i class="fa fa-user-circle" aria-hidden="true"></i> Jacque Maribe</div>
-                <div class="history__item">Mombasa</div>
-                <div class="history__item">Karen</div>
-                <div class="history__item">35</div>
-                <div class="history__item">
-                    <form>
-
-                        <select>
-
-                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                <p class="form_input">Kakamega Nairobi,kenya</p>
-                            </option>
-                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                <p class="form_input">Keroka,kenya</p>
-                            </option>
-                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                <p class="form_input">Mombasa</p>
-                            </option>
-                        </select>
-                    </form>
-                </div>
-                <div class="history__item">
-                    <form>
-
-                        <select>
-
-                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                <p class="form_input">PENDING</p>
-                            </option>
-                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                <p class="form_input">APPROVED</p>
-                            </option>
-                            <option value="text" class="form_input" placeholder="Email Adress " id="name" required>
-                                <p class="form_input">IN TRANSIT</p>
-                            </option>
-                        </select>
-                    </form>
-                </div>
-
-            </div>
-    </div>
-    </section>
-    </main>
+          <div class="history__item">
+            <form>
+              <select>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">PENDING</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">APPROVED</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">IN TRANSIT</p>
+                </option>
+              </select>
+            </form>
+          </div>
+        </div>
+        <div class="rows ">
+          <div class="history__item">
+            <i class="fa fa-user-circle" aria-hidden="true"></i> Damaris Auma
+          </div>
+          <div class="history__item">Thika</div>
+          <div class="history__item">Kisumu</div>
+          <div class="history__item">23</div>
+          <div class="history__item">
+            <form>
+              <select>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">Kakamega Nairobi,kenya</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">Keroka,kenya</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">Mombasa</p>
+                </option>
+              </select>
+            </form>
+          </div>
+          <div class="history__item">
+            <form>
+              <select>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">PENDING</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">APPROVED</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">IN TRANSIT</p>
+                </option>
+              </select>
+            </form>
+          </div>
+        </div>
+        <div class="rows ">
+          <div class="history__item">
+            <i class="fa fa-user-circle" aria-hidden="true"></i> Jacque Maribe
+          </div>
+          <div class="history__item">Mombasa</div>
+          <div class="history__item">Karen</div>
+          <div class="history__item">35</div>
+          <div class="history__item">
+            <form>
+              <select>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">Kakamega Nairobi,kenya</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">Keroka,kenya</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">Mombasa</p>
+                </option>
+              </select>
+            </form>
+          </div>
+          <div class="history__item">
+            <form>
+              <select>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">PENDING</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">APPROVED</p>
+                </option>
+                <option
+                  value="text"
+                  class="form_input"
+                  placeholder="Email Adress "
+                  id="name"
+                  required
+                >
+                  <p class="form_input">IN TRANSIT</p>
+                </option>
+              </select>
+            </form>
+          </div>
+        </div>
+      </section>
     </div>
     <footer>
-        <div class="wor">
-            <div class="one">
-                <ul class="footer-nav">
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Our locations</a></li>
-                    <li><a href="#">Our Contacts</a></li>
-                </ul>
-            </div>
-            <div class="wor">
-                <ul class="social">
-                    <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></li>
-                </ul>
-            </div><br>
-
+      <div class="wor">
+        <div class="one">
+          <ul class="footer-nav">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Our locations</a></li>
+            <li><a href="#">Our Contacts</a></li>
+          </ul>
         </div>
         <div class="wor">
-            <p class="k">
-                Copyright &copy;2018 by Kelvin Onkundi Ndemo
-            </p>
-
+          <ul class="social">
+            <li>
+              <a href="#"
+                ><i class="fa fa-facebook-official" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa fa-google-plus" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
         </div>
-
+        <br />
+      </div>
+      <div class="wor">
+        <p class="k">Copyright &copy;2018 by Kelvin Onkundi Ndemo</p>
+      </div>
     </footer>
 
     <script src="js/index.js"></script>
-</body>
-
+  </body>
 </html>

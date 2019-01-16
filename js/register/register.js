@@ -5,6 +5,7 @@ const {
   password,
   submit_reg
 } = document.forms.registration_form.elements;
+const alert = document.getElementById("alert");
 
 submit_reg.addEventListener("click", e => {
   e.preventDefault();
@@ -13,9 +14,6 @@ submit_reg.addEventListener("click", e => {
     email: email.value,
     password: password.value
   };
-
-  console.log("Submiting.......");
-  console.log(data);
   fetch("https://seend34.herokuapp.com/api/v2/auth/signup", {
     headers: { "Content-Type": "application/json" },
     method: "POST",
@@ -25,9 +23,23 @@ submit_reg.addEventListener("click", e => {
       return resp.json();
     })
     .then(data => {
-      console.log(data);
+      if (data.message) {
+        alert.className = "alert alert-success alert-dismissible fade show";
+        alert.innerText = data.message;
+
+        setTimeout(() => {
+          alert.className = "alert alert-success alert-dismissible fade";
+
+          window.location = window.location.origin + "/sendIT/user.html";
+        }, 3000);
+      }
     })
     .catch(error => {
-      console.log(error);
+      alert.className = "alert alert-success alert-dismissible fade show";
+      alert.innerText = error;
+
+      setTimeout(() => {
+        alert.className = "alert alert-success alert-dismissible fade";
+      }, 3000);
     });
 });
