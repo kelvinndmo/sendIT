@@ -42,16 +42,23 @@
 
       <form id="order_edit" style="display:flex; justify-content:space-between">
         <div class="history__item">
-          <select id="origin">
+          <select class="form-control" id="origin">
             <option value="Kakamega">KaKemega,Nairobi</option>
             <option value="kismu">Kisumu</option>
           </select>
         </div>
         <div class="history__item">
-          <input id="weight" type="number" min="0" max="50" />
+          <input
+            id="weight"
+            class="form-control"
+            type="number"
+            min="0"
+            max="50"
+            placeholder="0-50"
+          />
         </div>
         <div class="history__item">
-          <select id="destination">
+          <select class="form-control" id="destination">
             <option value="Kakamega">KaKemega,Nairobi</option>
             <option value="nairobi">Nairobi</option>
           </select>
