@@ -76,7 +76,43 @@ fetch(`https://seend34.herokuapp.com/api/v2/parcels`, {
   });
 
 adminlocation.addEventListener("change", e => {
-  console.log("changing admin location");
+  fetch(
+    `https://seend34.herokuapp.com/api/v2/parcels/${
+      localStorage.edit_id
+    }/presentlocation`,
+    {
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + localStorage.token
+      },
+      method: "PUT",
+      body: JSON.stringify({ current_location: e.target.value })
+    }
+  )
+    .then(resp => {
+      return resp.json();
+    })
+    .then(data => {
+      console.log(data);
+
+      alert.className = "alert alert-success alert-dismissible fade show";
+      alert.innerText = data.message;
+      alert.innerText = "Present location updated to " + e.target.value;
+
+      setTimeout(() => {
+        alert.className = "alert alert-success alert-dismissible fade";
+        window.location.reload();
+      }, 3000);
+    })
+    .catch(error => {
+      alert.className = "alert alert-danger alert-dismissible fade show";
+      alert.innerText = error;
+
+      setTimeout(() => {
+        alert.className = "alert alert-danger alert-dismissible fade";
+        window.location.reload();
+      }, 1000);
+    });
 });
 
 adminstatus.addEventListener("change", e => {
@@ -114,6 +150,7 @@ adminstatus.addEventListener("change", e => {
 
       setTimeout(() => {
         alert.className = "alert alert-warning alert-dismissible fade";
+        window.location.reload();
       }, 3000);
     })
     .catch(error => {
@@ -122,6 +159,7 @@ adminstatus.addEventListener("change", e => {
 
       setTimeout(() => {
         alert.className = "alert alert-danger alert-dismissible fade";
+        window.location.reload();
       }, 3000);
     });
 });
